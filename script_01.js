@@ -19,25 +19,27 @@ let person = {
                 familyName:"Savi",
                 salary:[120000,125000],
                 hasAccess:true,
-                sayHello: function(){
-                                        return "hi";
-                                    }
+                sayHello: 
+                function()  {
+                            return "Ich bin " + this.firstName;
+                            }
             };
 
-ausgabe(person);
-ausgabe(person.firstName);
-ausgabe(person.familyName);
-ausgabe(person.salary[0]);
-ausgabe(person.hasAccess);
+// ausgabe(person);
+// ausgabe(person.firstName);
+// ausgabe(person.familyName);
+// ausgabe(person.salary[0]);
+// ausgabe(person.hasAccess);
 
-let txt =   "Ich bin " + person.firstName + " " +
-            person.familyName + " und verdiene " +
-            person.salary[1] + " p.a."
+// let txt =   "Ich bin " + person.firstName + " " +
+//             person.familyName + " und verdiene " +
+//             person.salary[1] + " p.a."
 
-ausgabe(txt);
+// ausgabe(txt);
 
-if (person.hasAccess) {
-    ausgabe("Sie sind ein VIP!");
-}
+// if (person.hasAccess) {
+//     ausgabe("Sie sind ein VIP!");
+// }
 
 ausgabe(person.sayHello());
+
